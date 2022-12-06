@@ -289,7 +289,7 @@
 			{% for j in teams %}
 				<div class="col-xl-3 col-md-6 team_col">
 					<div class="team_item d-flex flex-column align-items-center justify-content-start text-center">
-						<div class="team_image"><img src="{{j.img2.url}}" alt=""></div>
+						<div class="team_image"><img src="{{j.img2.url}}" style="width:100%; height:100%" alt=""></div>
 						<div class="team_content">
 							<div class="team_title"><a href="#">{{j.name2}}</a></div>
 							<div class="team_text">
@@ -346,7 +346,8 @@
 	<!-- Footer -->
 
 	<footer class="footer">
-		<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="{% static 'images/footer_1.jpg' %}" data-speed="0.8"></div>
+		<div class="parallax_background parallax-window" data-parallax="scroll" data-image data-speed="0.8"><img src="{% static 'images/footer_1.jpg' %}" alt=""></div>
+		<div class="container">
 		<div class="container">
 			<div class="row">
 				<div class="col">
